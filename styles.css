@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: gold;
+}
+
+.d1{
+  position: relative;
+}
+
+.header-d1{
+    width: 45%;
+    padding-left: 5%;
+    color: gold;
+    align-items: center;
+    top: 23%;
+    position: absolute;
+}
+
+.heri-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
