@@ -24,9 +24,74 @@ html, body{
 
 .heri-cont{
     width: 100%;
-    height: 100%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: black; */
 }
+
+/* Define fixed dimensions for the card and image */
+.fixed-card-size {
+    width: 380px; 
+    height: 380px; 
+    padding: 5px;
+    margin-bottom: 10%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .fixed-image-size {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+  }
+
+  .card-body {
+    position: absolute;
+    bottom: 0; 
+    width: 100%; 
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .card-body {
+    transform: translateY(0); /* Show the text on hover */
+  }
+  
+  .card-title {
+    margin: 0;
+    text-align: center;
+    padding: 5%;
+    font-size: 35px; /* Larger font size initially */
+    transition: font-size 0.3s ease; /* Smooth transition for font size */
+  }
+  
+  .card:hover .card-title {
+    font-size: 24px; /* Decrease font size on hover */
+  }
+
+  .card-text, .btn {
+    display: none; /* Hide text and button initially */
+  }
+  
+  .card:hover .card-text, .card:hover .btn {
+    display: block; /* Show text and button on hover */
+  }
+
+  .card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.57);
+  }
+
+  .custom-modal-size {
+    max-width: 60%; /* Set your desired width */
+    max-height: 50%; /* Set your desired height */
+  }
+  
+  .modal-image {
+    max-width: 100%; /* Restrict the image width */
+    max-height: 400px; /* Restrict the image height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+  }
