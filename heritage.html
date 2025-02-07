@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
@@ -67,7 +67,7 @@
               </p>
               <button
                 type="button"
-                class="btn btn-outline-primary"
+                class="btn btn-outline-primary btn-block"
                 data-bs-toggle="modal"
                 data-bs-target="#tajMahalModal"
               >
@@ -104,25 +104,24 @@
           </div>
   
 
-        <!-- Red Fort Card -->
+        <!-- Meenakshi Temple Card -->
         <div class="col-md-4">
             <div class="card fixed-card-size">
               <img
                 src="images/meenakshiTemple.jpeg"
                 class="card-img-top fixed-image-size"
-                alt="Taj Mahal"
+                alt="Meenakshi Temple"
               />
               <h5 class="card-title">Meenakshi Temple</h5>
               <div class="card-body">
                 <p class="card-text">
-                    A historic fort in Delhi, a UNESCO World Heritage Site built in
-                    1648.
+                    A masterpiece of Dravidian architecture, famous for its intricate carvings.
                 </p>
                 <button
                   type="button"
                   class="btn btn-outline-primary"
                   data-bs-toggle="modal"
-                  data-bs-target="#tajMahalModal"
+                  data-bs-target="#meenakshiTempleModal"
                 >
                   Read More
                 </button>
@@ -200,7 +199,7 @@
               type="button"
               class="btn btn-primary"
               data-bs-toggle="modal"
-              data-bs-target="#redFortModal"
+              data-bs-target="#meenakshiTempleModal"
             >
               Read More
             </button>
@@ -233,7 +232,7 @@
           <div class="modal-body">
             <img
               src="images/tajMahal.jpg"
-              class="img-fluid mb-3"
+              class="img-fluid mb-3 modal-image"
               alt="Taj Mahal"
             />
             <p>
@@ -290,6 +289,41 @@
         </div>
       </div>
     </div>
+
+    <!-- Meenakshi Temple Modal -->
+    <div
+    class="modal fade"
+    id="meenakshiTempleModal"
+    tabindex="-1"
+    aria-labelledby="meenakshiTempleLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog custom-modal-size">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="meenakshiTempleLabel">Meenakshi Temple</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="images/meenakshiTemple.jpeg"
+            class="img-fluid mb-3 modal-image"
+            alt="Meenakshi Temple"
+          />
+          <p>Meenakshi Temple, located in Madurai, is a magnificent example of Dravidian architecture, 
+            dedicated to Goddess Meenakshi and Lord Sundareswarar.</p>  
+       <p>Renowned for its towering gopurams adorned with thousands of colorful sculptures, 
+    the temple attracts millions of devotees and tourists, especially during the grand Meenakshi Thirukalyanam festival.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Bootstrap JS (Ensure you include Bootstrap 5 JavaScript for the modal to work) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
