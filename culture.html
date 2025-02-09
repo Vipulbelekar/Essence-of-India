@@ -93,18 +93,6 @@
             Traditional Attire 👘
           </button>
         </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="rituals-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#rituals"
-            type="button"
-            role="tab"
-          >
-            Rituals & Customs 🔥
-          </button>
-        </li>
       </ul>
 
       <!-- Tab Content -->
@@ -112,7 +100,7 @@
         <!-- Festivals Tab -->
         <div class="tab-pane fade show active" id="festivals" role="tabpanel">
           <section class="festival-section">
-            <h2 class="text-center my-5">Festivals of India 🎊</h2>
+            <h2 class="text-center">Festivals of India 🎊</h2>
 
             <!-- Diwali -->
             <div class="festival parallax diwali">
@@ -195,46 +183,232 @@
 
         <!-- Dance & Music Tab -->
         <div class="tab-pane fade" id="dance-music" role="tabpanel">
-          <p>
-            India's rich heritage is reflected in its diverse dance and music
-            forms. Classical dance styles like Bharatanatyam, Kathak, Odissi,
-            and Kathakali tell stories through graceful movements and
-            expressions.
-          </p>
-          <p>
-            Indian music includes classical traditions like Hindustani and
-            Carnatic music, as well as folk and Bollywood music, creating a
-            unique blend of melody and rhythm.
-          </p>
+          <section class="music-dance-section container py-5">
+            <h2 class="text-center mb-4 fw-bold">Music & Dance of India 🎶</h2>
+
+            <div
+              class="music-dance-scroll-container d-flex overflow-auto gap-3"
+            >
+              <!-- Bharatanatyam -->
+              <div
+                class="card border-0 fixed-card-size"
+                style="min-width: 280px; max-width: 320px"
+              >
+                <img
+                  src="images/bharatnatyam.png"
+                  class="card-img-top fixed-image-size"
+                  alt="Bharatanatyam"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Bharatanatyam</h5>
+                  <p class="card-text">
+                    A classical dance from Tamil Nadu, expressing stories
+                    through intricate hand gestures and expressions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Kathak -->
+              <div
+                class="card border-0 fixed-card-size"
+                style="min-width: 280px; max-width: 320px"
+              >
+                <img
+                  src="images/kathak1.png"
+                  class="card-img-top fixed-image-size"
+                  alt="Kathak"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Kathak</h5>
+                  <p class="card-text">
+                    A graceful North Indian dance style featuring rhythmic
+                    footwork and storytelling.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Kathakali -->
+              <div
+                class="card border-0 fixed-card-size"
+                style="min-width: 280px; max-width: 320px"
+              >
+                <img
+                  src="images/kathakali.png"
+                  class="card-img-top fixed-image-size"
+                  alt="Kathakali"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Kathakali</h5>
+                  <p class="card-text">
+                    A dramatic dance-drama from Kerala, known for its elaborate
+                    costumes and intense facial expressions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Odissi -->
+              <div
+                class="card border-0 fixed-card-size"
+                style="min-width: 280px; max-width: 320px"
+              >
+                <img
+                  src="images/oddisi-2.png"
+                  class="card-img-top fixed-image-size"
+                  alt="Odissi"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Odissi</h5>
+                  <p class="card-text">
+                    One of the oldest classical dance forms, originating from
+                    Odisha, known for its graceful movements.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Bhangra -->
+              <div
+                class="card border-0 fixed-card-size"
+                style="min-width: 280px; max-width: 320px"
+              >
+                <img
+                  src="images/bhangra.webp"
+                  class="card-img-top fixed-image-size"
+                  alt="Bhangra"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Bhangra</h5>
+                  <p class="card-text">
+                    A vibrant folk dance from Punjab, known for its energetic
+                    beats and colorful attire.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Sitar -->
+              <div
+                class="card border-0 fixed-card-size"
+                style="min-width: 280px; max-width: 320px"
+              >
+                <img
+                  src="images/Sitar.png"
+                  class="card-img-top fixed-image-size"
+                  alt="Sitar"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Sitar</h5>
+                  <p class="card-text">
+                    A stringed instrument synonymous with Hindustani classical
+                    music, made famous by Pandit Ravi Shankar.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Tabla -->
+              <div
+                class="card border-0 fixed-card-size"
+                style="min-width: 280px; max-width: 320px"
+              >
+                <img
+                  src="images/tabla-1.png"
+                  class="card-img-top fixed-image-size"
+                  alt="Tabla"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Tabla</h5>
+                  <p class="card-text">
+                    The heartbeat of Indian classical music, played with
+                    rhythmic precision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
 
         <!-- Traditional Attire Tab -->
         <div class="tab-pane fade" id="attire" role="tabpanel">
-          <p>
-            India's traditional attire varies across regions. Women often wear
-            sarees, lehengas, or salwar kameez, while men wear kurta-pajamas,
-            sherwanis, or dhotis.
-          </p>
-          <p>
-            Each outfit is adorned with intricate embroidery, jewelry, and
-            vibrant colors, reflecting the cultural essence of different states.
-          </p>
+          <section class="container my-5">
+            <h2 class="text-center mb-4">Traditional Attire of India</h2>
+            <div class="masonry-grid">
+              <div class="masonry-item card shadow-sm mb-4">
+                <img src="images/saree.jpg" class="card-img-top" alt="Saree" />
+                <div class="card-body">
+                  <h5 class="card-title">Saree</h5>
+                  <p class="card-text">
+                    A traditional Indian garment draped elegantly, worn by women
+                    across regions.
+                  </p>
+                </div>
+              </div>
+              <div class="masonry-item card shadow-sm mb-4">
+                <img
+                  src="images/sherwani.webp"
+                  class="card-img-top"
+                  alt="Sherwani"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sherwani</h5>
+                  <p class="card-text">
+                    A regal outfit for men, often worn at weddings and formal
+                    events.
+                  </p>
+                </div>
+              </div>
+              <div class="masonry-item card shadow-sm mb-4">
+                <img src="images/dhoti.webp" class="card-img-top" alt="Dhoti" />
+                <div class="card-body">
+                  <h5 class="card-title">Dhoti</h5>
+                  <p class="card-text">
+                    A traditional unstitched cloth wrapped around the waist,
+                    mainly worn by men.
+                  </p>
+                </div>
+              </div>
+              <div class="masonry-item card shadow-sm mb-4">
+                <img
+                  src="images/lehanga.webp"
+                  class="card-img-top"
+                  alt="Lehenga"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Lehenga</h5>
+                  <p class="card-text">
+                    A beautifully embroidered skirt paired with a blouse,
+                    popular in festivities.
+                  </p>
+                </div>
+              </div>
+              <div class="masonry-item card shadow-sm mb-4">
+                <img
+                  src="images/phulkari.jpg"
+                  class="card-img-top"
+                  alt="Phulkari"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Phulkari</h5>
+                  <p class="card-text">
+                    An embroidered shawl from Punjab, known for its vibrant
+                    colors.
+                  </p>
+                </div>
+              </div>
+              <div class="masonry-item card shadow-sm mb-4">
+                <img
+                  src="images/bandhgala.jpg"
+                  class="card-img-top"
+                  alt="Bandhgala"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Bandhgala</h5>
+                  <p class="card-text">
+                    A formal suit for men, known as the Jodhpuri suit, worn
+                    during special occasions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-
-        <!-- Rituals & Customs Tab -->
-        <div class="tab-pane fade" id="rituals" role="tabpanel">
-          <p>
-            Indian rituals and customs are deeply rooted in spirituality and
-            tradition. Rituals like lighting lamps, offering prayers, and
-            following sacred ceremonies play a vital role in daily life.
-          </p>
-          <p>
-            From traditional Hindu wedding ceremonies to sacred fire rituals
-            (havan), Indian customs symbolize prosperity, devotion, and cultural
-            heritage.
-          </p>
-        </div>
-      </div>
     </section>
 
     <!-- Bootstrap JS (Required for Tabs to Work) -->
