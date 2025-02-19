@@ -9,29 +9,149 @@ html, body{
     padding-top: 2%;
     background-color: gold;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
-.d1{
-  position: relative;
+/* Hero Section Styling */
+.hero-section {
+  background: linear-gradient(to right, #ff7b00, #ffbb00);
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
 }
 
-.header-d1{
-    width: 45%;
-    padding-left: 5%;
-    color: gold;
-    align-items: center;
-    top: 23%;
-    position: absolute;
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-.heri-cont{
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: black; */
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out;
 }
+
+.btn-explore {
+  background: #fff;
+  color: #ff7b00;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-explore:hover {
+  background: #ff7b00;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateX(50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+
+/* Minor Enhancements */
+.text-primary {
+  color: #ff7b00 !important; /* Vibrant Indian theme color */
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.bi-check-circle-fill {
+  font-size: 1.2rem;
+}
+
+/* Animations using Bootstrap Utility Classes */
+.img-fluid {
+  animation: fadeInRight 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+
+.unique-india {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm gradient */
+  color: white;
+}
+
+.unique-india .card {
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.unique-india .card:hover {
+  transform: translateY(-5px);
+}
+
+.unique-india .display-5 i {
+  font-size: 2.5rem;
+}
+
+
+/* Section Background & Typography */
+.essence-section {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+}
+
+/* Gradient Heading */
+.text-gradient {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card Styling */
+.essence-card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.essence-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styling */
+.icon-style {
+  font-size: 3rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.essence-card:hover i {
+  color: #ff7e5f !important; 
+  transform: scale(1.1); 
+}
+
 
 /* Ensure the navbar is fixed at the top */
 .navbar.fixed-top {
@@ -39,7 +159,7 @@ html, body{
     top: 0;
     width: 100%;
     /* z-index: 1030; */
-    margin-bottom: 10%;
+    margin-bottom: 8%;
   }
 
 /* Define fixed dimensions for the card and image */
@@ -82,11 +202,11 @@ html, body{
     font-size: 24px; /* Decrease font size on hover */
   }
 
-  .heri-card-text, .btn {
+  .heri-card-text, .heri-btn {
     display: none; /* Hide text and button initially */
   }
   
-  .heri-card:hover .heri-card-text, .heri-card:hover .btn {
+  .heri-card:hover .heri-card-text, .heri-card:hover .heri-btn {
     display: block; /* Show text and button on hover */
   }
 
@@ -217,4 +337,415 @@ html, body{
     width: 100%;
     break-inside: avoid;
 }
-  
+
+/* cusine */
+#hero-cuisine {
+    background: #fff8e1;
+    height: 100vh
+}
+
+.full-height-image {
+    width: 100%; 
+    height: auto; 
+    max-height: 100%; 
+    object-fit: cover; 
+  }
+
+.animate-title {
+    animation: fadeInUp 1.5s ease-in-out;
+}
+.animate-image {
+    animation: fadeInRight 1.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cuisines-section {
+    padding: 2rem 0;
+}
+
+/* Style for each card */
+.cuisines-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cuisines-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.cuisines-img {
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Larger images for mobile */
+@media (max-width: 576px) {
+    .cuisines-img {
+        height: 250px;
+    }
+}
+
+/* thali */
+
+/* Section Styling */
+.thali-section {
+  background-color: #fff8e1; 
+  padding: 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Thali Image */
+.thali-img {
+  max-width: 450px;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thali-img:hover {
+  transform: scale(1.08);
+}
+
+/* Tab Button Styling */
+.thali-nav .nav-link {
+  background-color: #f0ad4e;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.thali-nav .nav-link.active {
+  background-color: #d9534f;
+  color: white;
+  transform: scale(1.1);
+}
+
+.thali-nav .nav-link:hover {
+  background-color: #ff7043;
+  color: white;
+}
+
+/* Thali Description */
+.tab-pane h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #d84315;
+}
+
+.tab-pane p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6d4c41;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .thali-img {
+      max-width: 100%;
+  }
+
+  .thali-nav .nav-link {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+}
+
+.destination {
+  display: flex;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  text-align: left;
+}
+
+/* Responsive - Stack on smaller screens */
+@media (max-width: 768px) {
+  .destination {
+      flex-direction: column;
+      height: auto;
+  }
+  .image {
+      height: 50vh;
+      width: 100%;
+  }
+  .text-container {
+      text-align: center;
+      padding: 2rem;
+  }
+}
+
+/* travel */
+
+/* Full-height split view */
+.destination {
+  display: flex;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  color: white;
+}
+
+/* Background Colors for Each Section */
+.jaipur { background-color: #ffcccc; } /* Light Pink */
+.kerala { background-color: #004d00; } /* Deep Green */
+.varanasi { background-color: #ffcc66; } /* Golden Yellow */
+.goa { background-color: #0066cc; } /* Ocean Blue */
+.ladakh { background-color: #d9eaf9; color: black; } /* Snowy White */
+.meghalaya { background-color: #1e5c4c; } /* Misty Green */
+
+/* Image Styling */
+.image {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Text Container */
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .destination {
+      flex-direction: column;
+      height: auto;
+  }
+  .image {
+      height: 50vh;
+      width: 100%;
+  }
+  .text-container {
+      text-align: center;
+      padding: 2rem;
+  }
+}
+
+
+/* Travel Hero Section */
+.travel-hero-section {
+  height: 100vh;
+  background: linear-gradient(to bottom, #f8f9fa, #bedef5); /* Subtle gradient */
+  display: flex;
+  align-items: center;
+}
+
+/* Hero Text */
+.travel-hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.travel-hero-text .travel-highlight {
+  color: #D32F2F; /* Travel vibe with deep red */
+}
+
+.travel-hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Travel Illustration */
+.travel-hero-img {
+  max-width: 85%;
+  animation: travel-float 4s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes travel-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Button Styling */
+.travel-hero-btn {
+  border-radius: 30px;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.travel-hero-btn:hover {
+  background-color: #D32F2F;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .travel-hero-section {
+      text-align: center;
+      padding-top: 50px;
+  }
+  .travel-hero-text {
+      padding: 20px;
+  }
+}
+
+
+
+/* Art Gallery Hero Section */
+.art-gallery-hero {
+  background-color: #1a1a1a; /* Dark theme for a premium feel */
+  color: white;
+  padding: 80px 0;
+}
+
+/* Title Styling */
+.art-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.art-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .art-title {
+      font-size: 2rem;
+  }
+  .art-subtitle {
+      font-size: 1rem;
+  }
+  .carousel-inner img {
+      height: 250px;
+  }
+}
+
+
+/* Art Collection Section */
+.art-collection {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Art Card Styling */
+.art-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.art-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.art-info {
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+}
+
+.art-info h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.art-info p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Hover Effect */
+.art-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+      font-size: 2rem;
+  }
+  .section-subtitle {
+      font-size: 1rem;
+  }
+  .art-card img {
+      height: 200px;
+  }
+}
+
+

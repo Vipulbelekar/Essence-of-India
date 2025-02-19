@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Essence Of India</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -47,5 +47,294 @@
         </div>
       </div>
     </nav>
+    <section id="hero-cuisine" class="container-fluid py-5">
+      <div class="row align-items-center" style="height: 100%">
+        <!-- Left Side: Text & Button -->
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <h1 class="display-4 fw-bold animate-title">
+            Experience the Richness of Indian Cuisine 🍛
+          </h1>
+          <p class="lead">
+            A blend of flavors, traditions, and stories that create a magical
+            culinary experience.
+          </p>
+          <a href="#indian-cuisine" class="btn btn-warning btn-lg mt-3"
+            >Explore Flavors</a
+          >
+        </div>
+
+        <!-- Right Side: Image -->
+        <div
+          class="col-12 col-md-6 d-flex align-items-center"
+          style="height: 100%"
+        >
+          <img
+            src="images/kitchen.jpg"
+            class="img-fluid rounded shadow-lg animate-image full-height-image"
+            alt="Traditional Indian Kitchen"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="container cuisines-section my-5">
+      <h2 class="text-center mb-4">🍽️ Featured Indian Dishes</h2>
+      <p class="text-center text-muted">
+        Explore India's most famous traditional dishes from different regions.
+      </p>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <!-- Paneer Butter Masala -->
+        <div class="col">
+          <div class="card cuisines-card h-100 shadow">
+            <img
+              src="images/paneer-butter-masala.jpg"
+              class="card-img-top cuisines-img"
+              alt="Paneer Butter Masala"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Paneer Butter Masala</h5>
+              <p class="card-text">Creamy, rich tomato-based paneer curry</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dosa -->
+        <div class="col">
+          <div class="card cuisines-card h-100 shadow">
+            <img
+              src="images/dosa.jpg"
+              class="card-img-top cuisines-img"
+              alt="Dosa"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Dosa</h5>
+              <p class="card-text">
+                A crispy, thin South Indian pancake made from fermented rice and
+                lentil batter.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="col">
+          <div class="card cuisines-card h-100 shadow">
+            <img
+              src="images/dhokla.jpg"
+              class="card-img-top cuisines-img"
+              alt="Biryani"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Dhokla</h5>
+              <p class="card-text">
+                Steamed, fluffy chickpea cake from Gujarat
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paneer Tikka -->
+        <div class="col">
+          <div class="card cuisines-card h-100 shadow">
+            <img
+              src="images/paneer tikka.jpg"
+              class="card-img-top cuisines-img"
+              alt="Paneer Tikka"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Paneer Tikka</h5>
+              <p class="card-text">
+                Spiced and grilled paneer cubes, a popular North Indian
+                appetizer.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pav Bhaji -->
+        <div class="col">
+          <div class="card cuisines-card h-100 shadow">
+            <img
+              src="images/pav-bhaji.jpg"
+              class="card-img-top cuisines-img"
+              alt="Pav Bhaji"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pav Bhaji</h5>
+              <p class="card-text">
+                Mashed vegetable curry with buttered bread rolls.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pani Puri -->
+        <div class="col">
+          <div class="card cuisines-card h-100 shadow">
+            <img
+              src="images/pani-puri.jpg"
+              class="card-img-top cuisines-img"
+              alt="Pani Puri"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Pani Puri</h5>
+              <p class="card-text">
+                A beloved Indian street snack, crispy puris filled with tangy,
+                spicy water.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- thali -->
+    <section class="container my-5 thali-section">
+      <h2 class="text-center mb-4">Regional Thalis of India</h2>
+
+      <ul
+        class="nav nav-pills justify-content-center mb-4 thali-nav"
+        id="thaliTabs"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            data-bs-toggle="pill"
+            data-bs-target="#rajasthani"
+            type="button"
+          >
+            🏜️ Rajasthani
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="pill"
+            data-bs-target="#gujarati"
+            type="button"
+          >
+            🌿 Gujarati
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="pill"
+            data-bs-target="#punjabi"
+            type="button"
+          >
+            🍛 Punjabi
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="pill"
+            data-bs-target="#bengali"
+            type="button"
+          >
+            🐟 Bengali
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="pill"
+            data-bs-target="#south"
+            type="button"
+          >
+            🌶️ South Indian
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="pill"
+            data-bs-target="#maharashtrian"
+            type="button"
+          >
+            🍲 Maharashtrian
+          </button>
+        </li>
+      </ul>
+
+      <!-- Thali Content -->
+      <div class="tab-content text-center">
+        <div class="tab-pane fade show active" id="rajasthani">
+          <img
+            src="images/rajasthani thali.jpg"
+            class="img-fluid thali-img"
+            alt="Rajasthani Thali"
+          />
+          <h4 class="mt-3">Rajasthani Thali</h4>
+          <p class="thali-desc">
+            A royal platter featuring <b>Dal Baati Churma</b>,
+            <b>Gatte ki Sabzi</b>, and rich sweets.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="gujarati">
+          <img
+            src="images/gujarati-thali.jpg"
+            class="img-fluid thali-img"
+            alt="Gujarati Thali"
+          />
+          <h4 class="mt-3">Gujarati Thali</h4>
+          <p class="thali-desc">
+            A sweet and savory mix of <b>Dhokla</b>, <b>Undhiyu</b>,
+            <b>Kadhi</b>, and <b>Thepla</b>.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="punjabi">
+          <img
+            src="punjabi-thali.jpg"
+            class="img-fluid thali-img"
+            alt="Punjabi Thali"
+          />
+          <h4 class="mt-3">Punjabi Thali</h4>
+          <p class="thali-desc">
+            A hearty meal with <b>buttery parathas</b>, <b>paneer</b>,
+            <b>chole</b>, and <b>lassi</b>.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="bengali">
+          <img
+            src="images/Bengali-Thali.webp"
+            class="img-fluid thali-img"
+            alt="Bengali Thali"
+          />
+          <h4 class="mt-3">Bengali Thali</h4>
+          <p class="thali-desc">
+            A delicate balance of <b>rice</b>, <b>dal</b>, <b>fish curry</b>,
+            and <b>mishti</b>.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="south">
+          <img
+            src="images/south-thali.jpg"
+            class="img-fluid thali-img"
+            alt="South Indian Thali"
+          />
+          <h4 class="mt-3">South Indian Thali</h4>
+          <p class="thali-desc">
+            A flavorful mix of <b>dosa</b>, <b>idli</b>, <b>sambar</b>,
+            <b>rasam</b>, and <b>coconut chutney</b>.
+          </p>
+        </div>
+        <div class="tab-pane fade" id="maharashtrian">
+          <img
+            src="images/maharashtrian-thali.jpg"
+            class="img-fluid thali-img"
+            alt="Maharashtrian Thali"
+          />
+          <h4 class="mt-3">Maharashtrian Thali</h4>
+          <p class="thali-desc">
+            A perfect blend of <b>Varan Bhaat</b>, <b>Sabudana Khichdi</b>,
+            <b>Misal</b>, and <b>Puran Poli</b>.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
