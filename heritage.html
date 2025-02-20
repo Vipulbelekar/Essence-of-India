@@ -19,9 +19,11 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top rounded-4 rounded-top-0"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand custom-brand" href="#">Essence Of India</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,17 +43,40 @@
             <a class="nav-link" href="cusine.html">Indian Cusine</a>
             <a class="nav-link" href="travel.html">Travel & Destinations</a>
             <a class="nav-link" href="art.html">Art & Handicrafts</a>
-            <a class="nav-link" href="modern.html">Modern India</a>
             <a class="nav-link" href="contact.html">Contact Us</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <section class="container py-5">
+    <!-- Heritage Hero Section -->
+    <section
+      class="heritage-hero d-flex justify-content-center align-items-center text-center text-white"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 heritage-hero__overlay p-4">
+            <h1 class="heritage-hero__title display-4 fw-bold">
+              Explore India's Timeless Heritage
+            </h1>
+            <p class="heritage-hero__description lead">
+              From ancient temples to majestic palaces, experience the grandeur
+              of India's past.
+            </p>
+            <a
+              href="#heritageSection"
+              class="btn btn-danger btn-lg heritage-hero__btn mt-3"
+              >Discover More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="heritageSection" class="container py-5">
       <h2 class="text-center mb-4">Heritage & Landmarks</h2>
       <div class="row">
-        <!-- Taj Mahal heri-card -->
+        <!-- Taj Mahal -->
         <div class="col-md-4">
           <div class="heri-card card heri-fixed-card-size">
             <img
@@ -67,7 +92,7 @@
               </p>
               <button
                 type="button"
-                class="btn btn-outline-primary btn-block heri-btn"
+                class="btn btn-outline-primary heri-btn mb-2"
                 data-bs-toggle="modal"
                 data-bs-target="#tajMahalModal"
               >
@@ -77,135 +102,209 @@
           </div>
         </div>
 
-        <!-- Red Fort heri-card -->
+        <!-- Red Fort -->
         <div class="col-md-4">
-            <div class="heri-card card heri-fixed-card-size">
-              <img
-                src="images/redFort.jpeg"
-                class="heri-card-img-top heri-fixed-image-size"
-                alt="Taj Mahal"
-              />
-              <h5 class="heri-card-title">Red Fort</h5>
-              <div class="heri-card-body">
-                <p class="heri-card-text">
-                    A historic fort in Delhi, a UNESCO World Heritage Site built in
-                    1648.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary heri-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#redFortModal"
-                >
-                  Read More
-                </button>
-              </div>
+          <div class="heri-card card heri-fixed-card-size">
+            <img
+              src="images/redFort.jpeg"
+              class="heri-card-img-top heri-fixed-image-size"
+              alt="Red Fort"
+            />
+            <h5 class="heri-card-title">Red Fort</h5>
+            <div class="heri-card-body">
+              <p class="heri-card-text">
+                A historic fort in Delhi, a UNESCO World Heritage Site built in
+                1648.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary heri-btn m-2"
+                data-bs-toggle="modal"
+                data-bs-target="#redFortModal"
+              >
+                Read More
+              </button>
             </div>
           </div>
-  
+        </div>
 
-        <!-- Meenakshi Temple Card -->
+        <!-- Meenakshi Temple -->
         <div class="col-md-4">
-            <div class="heri-card card heri-fixed-card-size">
-              <img
-                src="images/meenakshiTemple.jpeg"
-                class="heri-card-img-top heri-fixed-image-size"
-                alt="Meenakshi Temple"
-              />
-              <h5 class="heri-card-title">Meenakshi Temple</h5>
-              <div class="heri-card-body">
-                <p class="heri-card-text">
-                    A masterpiece of Dravidian architecture, famous for its intricate carvings.
-                </p>
-                <button
-                  type="button"
-                  class="btn btn-outline-primary heri-btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#meenakshiTempleModal"
-                >
-                  Read More
-                </button>
-              </div>
+          <div class="heri-card card heri-fixed-card-size">
+            <img
+              src="images/meenakshiTemple.jpeg"
+              class="heri-card-img-top heri-fixed-image-size"
+              alt="Meenakshi Temple"
+            />
+            <h5 class="heri-card-title">Meenakshi Temple</h5>
+            <div class="heri-card-body">
+              <p class="heri-card-text">
+                A masterpiece of Dravidian architecture, famous for its
+                intricate carvings.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary heri-btn m-2"
+                data-bs-toggle="modal"
+                data-bs-target="#meenakshiTempleModal"
+              >
+                Read More
+              </button>
             </div>
           </div>
+        </div>
 
-      <!-- Taj Mahal Card -->
-      <div class="col-md-4">
-        <div class="heri-card card heri-fixed-card-size">
-          <img
-            src="images/tajMahal.jpg"
-            class="heri-card-img-top heri-fixed-image-size"
-            alt="Taj Mahal"
-          />
-          <div class="heri-card-body">
-            <h5 class="heri-card-title">Taj Mahal</h5>
-            <p class="heri-card-text">
-              A symbol of love, the Taj Mahal is an ivory-white marble
-              mausoleum in Agra.
-            </p>
-            <button
-              type="button"
-              class="btn btn-primary heri-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#tajMahalModal"
-            >
-              Read More
-            </button>
+        <!-- Hawa Mahal -->
+        <div class="col-md-4">
+          <div class="heri-card card heri-fixed-card-size">
+            <img
+              src="images/hawa-mahal.jpg"
+              class="heri-card-img-top heri-fixed-image-size"
+              alt="Hawa Mahal"
+            />
+            <h5 class="heri-card-title">Hawa Mahal</h5>
+            <div class="heri-card-body">
+              <p class="heri-card-text">
+                The "Palace of Winds," known for its beautiful lattice windows.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary heri-btn m-2"
+                data-bs-toggle="modal"
+                data-bs-target="#hawaMahalModal"
+              >
+                Read More
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Red Fort Card -->
-      <div class="col-md-4">
-        <div class="heri-card card heri-fixed-card-size">
-          <img
-            src="images/redFort.jpeg"
-            class="heri-card-img-top heri-fixed-image-size"
-            alt="Red Fort"
-          />
-          <div class="heri-card-body">
-            <h5 class="heri-card-title">Red Fort</h5>
-            <p class="heri-card-text">
-              A historic fort in Delhi, a UNESCO World Heritage Site built in
-              1648.
-            </p>
-            <button
-              type="button"
-              class="btn btn-primary heri-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#redFortModal"
-            >
-              Read More
-            </button>
+        <!-- Qutub Minar -->
+        <div class="col-md-4">
+          <div class="heri-card card heri-fixed-card-size">
+            <img
+              src="images/qutab-minar.jpg"
+              class="heri-card-img-top heri-fixed-image-size"
+              alt="Qutub Minar"
+            />
+            <h5 class="heri-card-title">Qutub Minar</h5>
+            <div class="heri-card-body">
+              <p class="heri-card-text">
+                The world's tallest brick minaret, built in the 12th century.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary heri-btn m-2"
+                data-bs-toggle="modal"
+                data-bs-target="#qutubMinarModal"
+              >
+                Read More
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Red Fort Card -->
-      <div class="col-md-4">
-        <div class="heri-card card heri-fixed-card-size">
-          <img
-            src="images/meenakshiTemple.jpeg"
-            class="heri-card-img-top heri-fixed-image-size"
-            alt="Red Fort"
-          />
-          <div class="heri-card-body">
-            <h5 class="heri-card-title">Red Fort</h5>
-            <p class="heri-card-text">
-              A historic fort in Delhi, a UNESCO World Heritage Site built in
-              1648.
-            </p>
-            <button
-              type="button"
-              class="btn btn-primary heri-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#meenakshiTempleModal"
-            >
-              Read More
-            </button>
+        <!-- Ajanta & Ellora Caves -->
+        <div class="col-md-4">
+          <div class="heri-card card heri-fixed-card-size">
+            <img
+              src="images/ajanta-caves.jpg"
+              class="heri-card-img-top heri-fixed-image-size"
+              alt="Ajanta & Ellora Caves"
+            />
+            <h5 class="heri-card-title">Ajanta & Ellora Caves</h5>
+            <div class="heri-card-body">
+              <p class="heri-card-text">
+                Ancient rock-cut caves featuring Buddhist, Hindu, and Jain
+                carvings.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary heri-btn m-2"
+                data-bs-toggle="modal"
+                data-bs-target="#ajantaElloraModal"
+              >
+                Read More
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+
+        <!-- Konark Sun Temple -->
+        <div class="col-md-4">
+          <div class="heri-card card heri-fixed-card-size">
+            <img
+              src="images/konark-temple1.jpg"
+              class="heri-card-img-top heri-fixed-image-size"
+              alt="Konark Sun Temple"
+            />
+            <h5 class="heri-card-title">Konark Sun Temple</h5>
+            <div class="heri-card-body">
+              <p class="heri-card-text">
+                A UNESCO site shaped like a giant chariot dedicated to the Sun
+                God.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary heri-btn m-2"
+                data-bs-toggle="modal"
+                data-bs-target="#konarkSunTempleModal"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mysore Palace -->
+        <div class="col-md-4">
+          <div class="heri-card card heri-fixed-card-size">
+            <img
+              src="images/mysore-palace.jpg"
+              class="heri-card-img-top heri-fixed-image-size"
+              alt="Mysore Palace"
+            />
+            <h5 class="heri-card-title">Mysore Palace</h5>
+            <div class="heri-card-body">
+              <p class="heri-card-text">
+                A royal palace known for its grandeur and Indo-Saracenic
+                architecture.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary heri-btn m-2"
+                data-bs-toggle="modal"
+                data-bs-target="#mysorePalaceModal"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gateway of India -->
+        <div class="col-md-4">
+          <div class="heri-card card heri-fixed-card-size">
+            <img
+              src="images/gate-way-of-india.jpg"
+              class="heri-card-img-top heri-fixed-image-size"
+              alt="Gateway of India"
+            />
+            <h5 class="heri-card-title">Gateway of India</h5>
+            <div class="heri-card-body">
+              <p class="heri-card-text">
+                A famous landmark in Mumbai, built during British rule in 1924.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-primary heri-btn m-2"
+                data-bs-toggle="modal"
+                data-bs-target="#gatewayOfIndiaModal"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -218,7 +317,7 @@
       aria-labelledby="tajMahalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog custom-modal-size">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="tajMahalLabel">Taj Mahal</h5>
@@ -236,14 +335,9 @@
               alt="Taj Mahal"
             />
             <p>
-              The Taj Mahal, built by Mughal Emperor Shah Jahan, is one of the
-              Seven Wonders of the World. Located in Agra, this stunning marble
-              mausoleum was constructed between 1632 and 1653 as a tribute to
-              his wife, Mumtaz Mahal.
-            </p>
-            <p>
-              It is an architectural masterpiece, with intricate carvings, a
-              massive dome, and beautiful gardens surrounding it.
+              The Taj Mahal, located in Agra, is one of the Seven Wonders of the
+              World. Built by Mughal Emperor Shah Jahan in memory of his wife
+              Mumtaz Mahal, it is an architectural masterpiece of white marble.
             </p>
           </div>
         </div>
@@ -258,7 +352,7 @@
       aria-labelledby="redFortLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog custom-modal-size">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="redFortLabel">Red Fort</h5>
@@ -276,14 +370,9 @@
               alt="Red Fort"
             />
             <p>
-              The Red Fort is a historic fort in Delhi, constructed by Mughal
-              Emperor Shah Jahan in 1648. It served as the main residence of the
-              Mughal emperors for nearly 200 years.
-            </p>
-            <p>
-              The fort is famous for its massive red sandstone walls, beautiful
-              gardens, and the annual Independence Day celebrations where the
-              Indian Prime Minister hoists the national flag.
+              The Red Fort in Delhi is a UNESCO World Heritage Site. Built by
+              Mughal Emperor Shah Jahan, it served as the primary residence of
+              Mughal rulers for nearly 200 years.
             </p>
           </div>
         </div>
@@ -292,38 +381,273 @@
 
     <!-- Meenakshi Temple Modal -->
     <div
-    class="modal fade"
-    id="meenakshiTempleModal"
-    tabindex="-1"
-    aria-labelledby="meenakshiTempleLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog custom-modal-size">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="meenakshiTempleLabel">Meenakshi Temple</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <img
-            src="images/meenakshiTemple.jpeg"
-            class="img-fluid mb-3 modal-image"
-            alt="Meenakshi Temple"
-          />
-          <p>Meenakshi Temple, located in Madurai, is a magnificent example of Dravidian architecture, 
-            dedicated to Goddess Meenakshi and Lord Sundareswarar.</p>  
-       <p>Renowned for its towering gopurams adorned with thousands of colorful sculptures, 
-    the temple attracts millions of devotees and tourists, especially during the grand Meenakshi Thirukalyanam festival.</p>
-
+      class="modal fade"
+      id="meenakshiTempleModal"
+      tabindex="-1"
+      aria-labelledby="meenakshiTempleLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="meenakshiTempleLabel">
+              Meenakshi Temple
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/meenakshiTemple.jpeg"
+              class="img-fluid mb-3 modal-image"
+              alt="Meenakshi Temple"
+            />
+            <p>
+              The Meenakshi Temple in Madurai is one of the most beautiful
+              temples in India, known for its towering gopurams adorned with
+              thousands of colorful sculptures.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- Hawa Mahal Modal -->
+    <div
+      class="modal fade"
+      id="hawaMahalModal"
+      tabindex="-1"
+      aria-labelledby="hawaMahalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hawaMahalLabel">Hawa Mahal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/hawa-mahal.jpg"
+              class="img-fluid mb-3 modal-image"
+              alt="Hawa Mahal"
+            />
+            <p>
+              The Hawa Mahal in Jaipur, also known as the "Palace of Winds,"
+              features a unique honeycomb facade with 953 small windows,
+              designed to allow royal women to observe street festivities
+              unseen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Qutub Minar Modal -->
+    <div
+      class="modal fade"
+      id="qutubMinarModal"
+      tabindex="-1"
+      aria-labelledby="qutubMinarLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="qutubMinarLabel">Qutub Minar</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/qutab-minar.jpg"
+              class="img-fluid mb-3 modal-image"
+              alt="Qutub Minar"
+            />
+            <p>
+              Qutub Minar is the world's tallest brick minaret, built in the
+              12th century by Qutb-ud-din Aibak. It stands as a significant
+              landmark of Indo-Islamic architecture in Delhi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ajanta & Ellora Caves Modal -->
+    <div
+      class="modal fade"
+      id="ajantaElloraModal"
+      tabindex="-1"
+      aria-labelledby="ajantaElloraLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ajantaElloraLabel">
+              Ajanta & Ellora Caves
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/ajanta-caves.jpg"
+              class="img-fluid mb-3 modal-image"
+              alt="Ajanta & Ellora Caves"
+            />
+            <p>
+              Ajanta and Ellora Caves in Maharashtra are a group of rock-cut
+              caves featuring stunning Buddhist, Hindu, and Jain sculptures and
+              paintings, dating back to ancient India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Konark Sun Temple Modal -->
+    <div
+      class="modal fade"
+      id="konarkSunTempleModal"
+      tabindex="-1"
+      aria-labelledby="konarkSunTempleLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="konarkSunTempleLabel">
+              Konark Sun Temple
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/konark-temple1.jpg"
+              class="img-fluid mb-3 modal-image"
+              alt="Konark Sun Temple"
+            />
+            <p>
+              The Konark Sun Temple in Odisha is a UNESCO World Heritage Site,
+              famous for its intricate stone carvings and chariot-like structure
+              dedicated to the Sun God.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mysore Palace Modal -->
+    <div
+      class="modal fade"
+      id="mysorePalaceModal"
+      tabindex="-1"
+      aria-labelledby="mysorePalaceLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mysorePalaceLabel">Mysore Palace</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/mysore-palace.jpg"
+              class="img-fluid mb-3 modal-image"
+              alt="Mysore Palace"
+            />
+            <p>
+              The Mysore Palace, a royal residence in Karnataka, is a stunning
+              example of Indo-Saracenic architecture, known for its grand Durbar
+              Hall and illuminated night views.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gateway of India Modal -->
+    <div
+      class="modal fade"
+      id="gatewayOfIndiaModal"
+      tabindex="-1"
+      aria-labelledby="gatewayOfIndiaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="gatewayOfIndiaLabel">
+              Gateway of India
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="images/gate-way-of-india.jpg"
+              class="img-fluid mb-3 modal-image"
+              alt="Gateway of India"
+            />
+            <p>
+              The Gateway of India in Mumbai is a historic monument built to
+              commemorate King George V's visit in 1911.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">
+        📧 Email:
+        <a
+          href="mailto:vipulbelekar@gmail.com"
+          class="text-white text-decoration-none"
+          >vipulbelekar@gmail.com</a
+        >
+      </p>
+      <p class="mb-0">📞 Phone: +91 9075206456</p>
+      <hr class="my-3 w-50 mx-auto text-white" />
+
+      <p class="mb-0" style="font-size: 1.1rem; color: #c0a080">
+        Crafted with ❤️ by <strong>Vipul</strong>
+      </p>
+    </footer>
 
     <!-- Bootstrap JS (Ensure you include Bootstrap 5 JavaScript for the modal to work) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

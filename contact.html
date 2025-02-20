@@ -19,9 +19,11 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top rounded-4 rounded-top-0"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand custom-brand" href="#">Essence Of India</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -41,11 +43,88 @@
             <a class="nav-link" href="cusine.html">Indian Cusine</a>
             <a class="nav-link" href="travel.html">Travel & Destinations</a>
             <a class="nav-link" href="art.html">Art & Handicrafts</a>
-            <a class="nav-link" href="modern.html">Modern India</a>
             <a class="nav-link" href="#">Contact Us</a>
           </div>
         </div>
       </div>
     </nav>
+
+    <section class="contact-hero text-center text-white py-5">
+      <div class="container">
+        <h1 class="display-4">Get in Touch</h1>
+        <p class="lead">We’d love to hear from you! Feel free to reach out.</p>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="row justify-content-center align-items-center">
+        <!-- Left Side: Profile Image -->
+        <div class="col-md-4 text-center">
+          <img
+            src="images/profile.jpg"
+            class="img-fluid rounded-4 profile-image"
+            alt="Your Name"
+          />
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="col-md-7">
+          <div class="card shadow p-4">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="yourname@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Write your message here..."
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">
+        📧 Email:
+        <a
+          href="mailto:vipulbelekar@gmail.com"
+          class="text-white text-decoration-none"
+          >vipulbelekar@gmail.com</a
+        >
+      </p>
+      <p class="mb-0">📞 Phone: +91 9075206456</p>
+      <hr class="my-3 w-50 mx-auto text-white" />
+
+      <p class="mb-0" style="font-size: 1.1rem; color: #c0a080">
+        Crafted with ❤️ by <strong>Vipul</strong>
+      </p>
+    </footer>
   </body>
 </html>
